@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os    
-import django_on_heroku
+import django_heroku
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -141,4 +142,4 @@ EMAIL_FILE_PATH = str(BASE_DIR.joinpath('sent_emails'))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
-django_on_heroku.settings(locals())
+django_heroku.settings(locals())
