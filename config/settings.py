@@ -141,5 +141,4 @@ EMAIL_FILE_PATH = str(BASE_DIR.joinpath('sent_emails'))
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-
 django_heroku.settings(locals())
